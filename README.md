@@ -1,2 +1,4 @@
 # MusicPlayer
-一款个人本地音乐播放器，主要深化了aidl、service、broadcast的学习
+提供歌曲扫描、歌曲播放模式控制、睡眠设置、摇一摇切歌等功能。主要运用MediaPlayer实现媒体播放控制，使用aidl实现后台service的跨进程媒体播放控制。安卓5.0之后必须显示的bindService，在service的onBind回掉中返回一个继承了aidl中IMediaService.stub的IBinder。这样Service就可以直接调用MediaPlayer的媒体播放控制。此外加入了扫描动画和背景切换。
+所用技术：aidl、service、broadcast、SensorManager的传感器开发、MediaPlayer、AnimationUtils动画等
+
